@@ -33,7 +33,8 @@ class Homepage extends React.Component {
       projection: {
         totalBusiness: total,
         tenorBusiness: tenor,
-        estimatedReturn: total * (percentageReturn / 100)
+        estimatedReturn: total * (percentageReturn / 100),
+        investmentNeed: total * (profit / 100)
       }
     })
   }
@@ -46,7 +47,7 @@ class Homepage extends React.Component {
 
   render() {
     const { total, percentageReturn, tenor, profit, projection } = this.state;
-    const { totalBusiness, tenorBusiness, estimatedReturn } = projection;
+    const { totalBusiness, tenorBusiness, estimatedReturn, investmentNeed } = projection;
 
     return(
       <div>
@@ -94,7 +95,7 @@ class Homepage extends React.Component {
               <FormInput
                 name='profit'
                 type='number' 
-                label='Profit Sharing'
+                label='Percentage New Investment Need'
                 value={profit}
                 placeholder='in percentage'
                 handleChange={this.handleChange} 
@@ -107,7 +108,7 @@ class Homepage extends React.Component {
           </div>
           <div className='result-investment'>
             <div className='estimated-investment'>
-              <h3 className='tenor'><span className='estimated-tenor'>{`${projection.tenor ? projection.tenor : '#'} Weeks`} </span></h3>
+              <h3 className='tenor'><span className='estimated-tenor'>{`${tenorBusiness ? tenorBusiness : '#'} Weeks`} </span></h3>
               <h2> Total Business Project </h2>
               <span className='rupiah'>{totalBusiness ? `Rp ${totalBusiness.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}` : '-'} </span> <br />
               <h2> Estimated Business Return </h2>
@@ -115,7 +116,7 @@ class Homepage extends React.Component {
             </div>
             <div className='approved-investment'>
               <h2> Approved Initial Investment </h2>
-              <span className='rupiah'> Rp. 58q23854723489572389 </span> <br />
+              <span className='rupiah'>{investmentNeed ? `Rp ${investmentNeed.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}` : '-'} </span> <br />
               <span className='rupiah'> *simulation using syirkah contract</span>
             </div>
           </div>

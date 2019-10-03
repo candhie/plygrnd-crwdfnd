@@ -146,7 +146,7 @@ class RegistrationForm extends React.Component {
           <Form.Item label="Phone Number">
             {getFieldDecorator('phone', {
               rules: [{ required: true, message: 'Please input your phone number!' }],
-            })(<Input addonBefore={prefixSelector} style={{ width: '100%' }} />)}
+            })(<Input addonBefore={prefixSelector} style={{ width: '100%' }} className='phone-number' />)}
           </Form.Item>
           <Form.Item label="Password" hasFeedback>
             {getFieldDecorator('password', {
