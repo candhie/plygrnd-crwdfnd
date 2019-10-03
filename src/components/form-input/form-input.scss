@@ -1,0 +1,36 @@
+$sub-color: grey;
+$main-color: black;
+
+.group {
+  position: relative;
+  margin: 10px 0;
+  padding: 0px 30px;
+
+  &.odd {
+    background-color: white;
+    border: 1px solid #0099cc;
+    border-radius: 30px;
+  }
+
+  &.even {
+    background-color: rgba(#0099cc, 0.5);
+    border: 1px solid rgba(#0099cc, 0.5);
+    border-radius: 30px;
+  }
+
+  .form-input {
+    color: $sub-color;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    margin: 15px 0;
+    width: 90%;
+  }
+
+  .form-input-label {
+    color: $main-color;
+    font-size: 16px;
+    font-weight: normal;
+    pointer-events: none; 
+  }
+}

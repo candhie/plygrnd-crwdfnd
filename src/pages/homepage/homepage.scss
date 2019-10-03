@@ -1,0 +1,90 @@
+.landing-home {
+  margin: 10px;
+  img { 
+    width: 100%;
+  }
+}
+
+.landing-flow {
+  margin: 10px;
+  background: rgba(#0099cc, 0.5);
+  img { 
+    width: 100%;
+  }
+}
+
+.recap {
+  width: 100%;
+  display: flex;
+
+  .tenor {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+
+    .estimated-tenor {
+      border: 1px solid rgba(#0099cc, 0.7);
+      border-radius: 15px 5px;
+      padding: 10px 15px;;
+      background: rgba(#0099cc, 0.5)
+    }
+  }
+
+  h1 {
+    color: rgba(#0099cc, 0.7);
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .rupiah {
+    display: block;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  .total-funding {
+    width: 50%;
+    margin: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .investment-calculator {
+    width: 25%;
+    margin: 10px;
+  }
+
+  .result-investment {
+    width: 25%;
+    border: 1px solid rgba(#0099cc, 0.5);
+    border-bottom: none;
+    border-radius: 30px 30px 8px 8px;
+    margin: 10px;
+
+    .estimated-investment {
+      height: 50%;
+    }  
+
+    .approved-investment {
+      background: rgba(#0099cc, 0.5);
+      border: 1px solid rgba(#0099cc, 0.5);
+      border-radius: 30px;
+      height: 50%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .buttons {
+    .align-right {
+      float: right;
+    }
+  }
+}

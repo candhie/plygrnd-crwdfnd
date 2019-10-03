@@ -1,0 +1,50 @@
+.header {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    width: 400px;
+    padding: 25px;
+
+    .logo {
+      color: red;
+
+      text {
+        font-size: 50px;
+      }
+    }
+  }
+
+  .options {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 25px;
+
+    a {
+      text-decoration: none;
+    }
+
+    .option {
+      padding: 10px 15px;
+      margin: 0px 10px;
+      cursor: pointer;
+      border: 1px solid;
+      border-radius: 30px;
+      border-color: #0099cc;
+      color: #0099cc;
+      
+      &.signup {
+        background-color: #FFBE00;
+        color: white;
+        border-color: #FFBE00;
+      }
+    }
+  }
+}
